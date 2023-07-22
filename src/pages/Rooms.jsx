@@ -1,7 +1,10 @@
 import React from 'react'
+import Hero from '../Components/Hero'
 
 export default function Rooms() {
   return (
-    <div> Hello from Rooms page</div>
+    <div>
+      <Hero hero="roomsHero" />
+    </div>
   )
 }
