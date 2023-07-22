@@ -5,11 +5,14 @@ import SingleRoom from './pages/SingleRoom';
 import Error from './pages/Error';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Navbar from './Components/Navbar';
+
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" exact element={ <Home /> } /> 
         <Route path="/rooms/" exact element={<Rooms />} />
