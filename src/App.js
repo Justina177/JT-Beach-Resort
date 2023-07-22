@@ -11,10 +11,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={Home} /> 
-        <Route exact path="/rooms/" component={Rooms} />
-        <Route exact path="/singleroom" component={SingleRoom} />
-        <Route exact path="/error" component={Error} />
+        <Route path="/" exact element={ <Home /> } /> 
+        <Route path="/rooms/" exact element={<Rooms />} />
+        <Route path="/rooms/:slug" exact element={<SingleRoom />} />
+        <Route path="/error" exact element={<Error />} />
       </Routes>
       
     </Router>
